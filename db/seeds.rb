@@ -5,8 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'json'
-require 'open-uri'
+# require 'json'
+# require 'open-uri'
 
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 option_serialized = open(url).read
@@ -17,3 +17,8 @@ end
 # choices.each do |name|
 #   Ingredient.create(name: drinks[])
 # end
+# url = "http://www.eujacomi.com.br/wp-content/uploads/2015/11/caipirinha-brasil-drink-e1479867158670.jpg"
+# cocktail = Cocktail.new(name: "Caipirinha")
+# cocktail.remote_photo_url = url
+# cocktail.save!
+# p "cocktail"

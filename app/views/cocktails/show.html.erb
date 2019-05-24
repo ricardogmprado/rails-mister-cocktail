@@ -1,5 +1,8 @@
+<div class = "container">
+
 <h1>Name:</h1>
 <%= @cocktail.name %>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
 <% @doses.each do |dose| %>
   <%= dose.description %>
@@ -9,3 +12,4 @@
 
 <%= link_to 'Create a new dose', new_cocktail_dose_path(@cocktail)%>
 <%= link_to 'Back', cocktails_path %>
+</div>
